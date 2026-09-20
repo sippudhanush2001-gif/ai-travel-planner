@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environments
+.env
+.env.local
+
+# Runtime storage (sqlite checkpoints, etc.)
+storage/
+*.sqlite
+*.sqlite3
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Test / tooling
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
