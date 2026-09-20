@@ -219,10 +219,21 @@ curl http://127.0.0.1:8000/plan/{id}/final
   "plan_id": "07df8e2f929d4012a1bf0ebdeef03170",
   "final_plan": {
     "destination": "Paris",
-    "days": [ /* full day-by-day itinerary */ ],
-    "hotels": [ /* 1–2 options within budget */ ],
-    "restaurants": [ /* curated picks */ ],
-    "packing_list": [ /* season-aware */ ],
+    "overview": "Paris is France's capital — iconic monuments, world-class museums...",
+    "days": [
+      {
+        "day": 1,
+        "title": "Arrival & Orientation",
+        "activities": [
+          {"title": "Eiffel Tower", "time": "morning", "area": "Champ de Mars", "tip": "Pre-book elevator tickets."}
+        ],
+        "meals": ["Breakfast at the hotel", "Dinner at a recommended local restaurant"],
+        "transport_note": "Public transit / walkathon day"
+      }
+    ],
+    "hotels": [{"name": "Comfort Central Champ de Mars", "area": "Champ de Mars", "price_per_night": 294.0, "rating": 4.2, "notes": "Value pick near major sights."}],
+    "restaurants": [{"name": "Le Comptoir du Relais", "cuisine": "French bistro", "area": "Saint-Germain", "budget_tier": "mid"}],
+    "packing_list": ["Comfortable walking shoes", "Season-appropriate layers", "Travel documents"],
     "local_tips": ["Metro is best.", "Book dinners ahead."]
   }
 }
