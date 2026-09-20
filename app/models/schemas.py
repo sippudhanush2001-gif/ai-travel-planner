@@ -160,7 +160,7 @@ class PlanCreated(BaseModel):
 class PlanStatus(BaseModel):
     plan_id: str
     phase: str = Field(
-        description="processing | reviewing | revising | modified | finalized | error"
+        description="processing | planning | review | finalized | error"
     )
     message: str | None = None
     draft_plan: ItineraryPlan | None = None
